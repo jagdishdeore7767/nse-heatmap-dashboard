@@ -14,7 +14,7 @@ useEffect(()=>{
 
 const load = async () => {
  try{
-   const r = await fetch("http://localhost:5001/stocks")
+   const r = await fetch("https://nse-heatmap-dashboard.onrender.com/stocks")
    const d = await r.json()
 
    if(Array.isArray(d)){
